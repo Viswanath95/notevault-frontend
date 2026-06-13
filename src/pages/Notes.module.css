@@ -1,0 +1,104 @@
+.page {
+    min-height: 100vh;
+    background-color: var(--bg-secondary);       /* #f5f5f5 → theme */
+}
+
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);                    /* #888 → theme */
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));  /* removed quotes ✅ */
+    gap: 1rem;
+}
+
+.loadingText {
+    text-align: center;
+    color: var(--text-muted);                    /* #888 → theme */
+    margin-top: 4rem;
+}
+
+.errorText {
+    text-align: center;
+    color: var(--error-text);                    /* #cc0000 → theme */
+    margin-top: 4rem;
+}
+
+.searchStatus {
+    color: var(--text-secondary);                /* #a52a2a → theme */
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--btn-primary-bg);     /* #1a1a1a → theme */
+    color: var(--btn-primary-text);              /* #fff → theme */
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+
+.fab:hover {
+    opacity: 0.85;
+}
+
+/* ── Infinite scroll sentinel ── */
+.sentinel {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.endText {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* Loading dots spinner */
+.spinner {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.spinnerDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--text-muted);
+    animation: bounce 0.6s ease-in-out infinite;
+}
+
+.spinnerDot:nth-child(2) { animation-delay: 0.1s; }
+.spinnerDot:nth-child(3) { animation-delay: 0.2s; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);    opacity: 0.4; }
+    50%       { transform: translateY(-6px); opacity: 1;   }
+}

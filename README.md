@@ -78,7 +78,7 @@ NoteVault backend running locally on http://localhost:5000
 
 Installation
 
-bashgit clone https://github.com/Viswanath95/notevault-frontend.git
+git clone https://github.com/Viswanath95/notevault-frontend.git
 cd notevault-frontend
 npm install
 
@@ -94,13 +94,13 @@ jsconst api = axios.create({
 
 Run the development server
 
-bashnpm run dev
+npm run dev
 
 The app will be available at http://localhost:5173.
 
 Build for production
 
-bashnpm run build
+npm run build
 
 Routes
 

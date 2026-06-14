@@ -1,6 +1,20 @@
 NoteVault — Frontend
 
+🔗 **Live demo:** [notevault-frontend.vercel.app](https://notevault-frontend.vercel.app)
+
 A clean, minimal notes app frontend built with React, React Router v6, and Context API. Connects to the NoteVault backend for authentication and note management.
+
+## Screenshots
+
+![Register](./screenshots/register.png)
+![Login](./screenshots/login.png)
+![Notes Dashboard - Light](./screenshots/notes-light.png)
+![Notes Dashboard - Dark](./screenshots/notes-dark.png)
+![Notes Dashboard - Create Modal](./screenshots/createnotes-modal.png)
+![Notes Dashboard - Edit Notes](./screenshots/edit-notes.png)
+![Notes Dashboard - Search Notes](./screenshots/search-notes.png)
+![Notes Dashboard - Delete Notes](./screenshots/delete-notes.png)
+![Notes Dashboard - Mobile Responsiveness](./screenshots/mobile-responsive.png)
 
 
 Features

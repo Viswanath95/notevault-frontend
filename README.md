@@ -84,7 +84,9 @@ npm install
 
 Environment Setup
 
-Update the base URL in src/api/axiosInstance.js if your backend runs on a different port:
+The app is pre-configured to use the hosted backend at https://notevault-backend-mmn5.onrender.com/api. No additional setup is required to run against the live API.
+
+If you want to run your own backend locally, update the base URL in src/api/axiosInstance.js:
 
 jsconst api = axios.create({
     baseURL: 'http://localhost:5000/api',
